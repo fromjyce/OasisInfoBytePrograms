@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Yatra+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="TemperatureConverter.css">
+    <title>Temperature Converter</title>
+  </head>
+  <body>
+    <div class="bg"></div>
+    <h1 class="heading">Welcome to the Temperature Converter</h1>
+    <input type="number" id="numberInput" placeholder="Enter a number" min="0" class="numberholder">
+    <h2 class="from">From</h2>
+    <select id="convertionfrom" class="fromoptions">
+      <option value="kelvin">Kelvin</option>
+      <option value="celsius">Celsius</option>
+      <option value="fahrenheit">Fahrenheit</option>
+  </select>
+    <h2 class="to">To</h2>
+    <select id="convertionto" class="tooptions">
+      <option value="kelvin">Kelvin</option>
+      <option value="celsius">Celsius</option>
+      <option value="fahrenheit">Fahrenheit</option>
+  </select>
+  <button onclick="ConvertandDisplay()" class="convert">Convert</button>
+  <h2 class ="resulttext" for="result" >Result</h2>
+  <input type="text" id="result" readonly class="resultbox">
+  <script>
+    function ConvertandDisplay() {
+        var numberInput = document.getElementById("numberInput");
+        var convertionfrom = document.getElementById("convertionfrom");
+        var convertionto = document.getElementById("convertionto");
+        var resultInput = document.getElementById("result");
+        if (numberInput.value === "") {
+          alert("Please enter a number.");
+          return;
+        }
+        else if (convertionfrom.value === convertionto.value) {
+          alert("Do not choose same units");
+          return;
+        }
+        var enteredNumber = parseFloat(numberInput.value);
+        if (convertionfrom.value === "kelvin" && convertionto.value === "celsius") {
+            var result = enteredNumber - 273.15;
+        }
+        else if (convertionfrom.value === "kelvin" && convertionto.value === "fahrenheit") {
+            var result = (enteredNumber - 273.15)*9/5 + 32;
+        }
+        else if (convertionfrom.value === "celsius" && convertionto.value === "kelvin") {
+          var result = enteredNumber + 273.15;
+        }
+        else if (convertionfrom.value === "celsius" && convertionto.value === "fahrenheit") {
+          var result = (enteredNumber * 1.8) + 32;
+        }
+        else if (convertionfrom.value === "fahrenheit" && convertionto.value === "celsius") {
+          var result = (enteredNumber - 32)*5/9;
+        }
+        else if (convertionfrom.value === "fahrenheit" && convertionto.value === "kelvin"){
+          var result = (enteredNumber + 459.67) *5/9;
+        }
+        resultInput.value = result;     
+    }
+  </script>
+  </body>
+  </html>
