@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&family=Tilt+Prism&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="Calculator.css">
+    <script src="/LevelTwo/TaskOne/Calculator.js"></script>
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="buttoncontainer">
+      <input type="text" id="numberInput" class="numberbox" disabled>
+      <div class="grid-container">
+     <input class="grid-item" type="button" value="DEL" onclick="handleDelete()">
+        <input class="grid-item" type="button" value="CLR" onclick="handleClear()">
+        <input class="grid-item" type="button" value="/" onclick="handleOperator('/')">
+        <input class="grid-item" type="button" value="x" onclick="handleOperator('x')">
+        <input class="grid-item" type="button" value="7" onclick="handleNumber(7)">
+        <input class="grid-item" type="button" value="8" onclick="handleNumber(8)">
+        <input class="grid-item" type="button" value="9" onclick="handleNumber(9)">
+        <input class="grid-item" type="button" value="-" onclick="handleOperator('-')">
+        <input class="grid-item" type="button" value="4" onclick="handleNumber(4)">
+        <input class="grid-item" type="button" value="5" onclick="handleNumber(5)">
+        <input class="grid-item" type="button" value="6" onclick="handleNumber(6)">
+        <input class="grid-item" type="button" value="+" onclick="handleOperator('+')">
+        <input class="grid-item" type="button" value="1" onclick="handleNumber(1)">
+        <input class="grid-item" type="button" value="2" onclick="handleNumber(2)">
+        <input class="grid-item" type="button" value="3" onclick="handleNumber(3)">
+        <input class="item16" type="button" value="0" onclick="handleNumber(0)">
+        <input class="grid-item" type="button" value="." onclick="handleOperator('.')">
+        <input class="item18" type="button" value="&#61" onclick="handleEqual()">
+    </div>
+    </div>
+    
+  </body>
+  </html>
