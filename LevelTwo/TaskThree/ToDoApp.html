@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans&family=Merriweather+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="ToDoApp.css">
+     <script src="ToDoApp.js" defer></script>
+    <title>To Do App</title>
+  </head>
+  <body>
+    <h1>To-Do App</h1>
+    <h2 class="newTask">NEW TASK</h2>
+  <input type="text" id="taskInput" placeholder="ENTER A NEW TASK" class="inputTask">
+  <button id="addButton" class="addTaskBut">Add Task</button>
+  <div style="width: 100%; margin-left: 415px;">
+        <div style="width: 50%; height: 100px; float: left;"> 
+            <h2 class="pendingTasksheading">Pending Tasks</h2>
+            <ul id="pendingTasks"></ul>
+        </div>
+        <div style="margin-left: 50%; height: 100px;"> 
+            <h2 class="completedTasksheading">Completed Tasks</h2>
+            <ul id="completedTasks"></ul>
+        </div>
+    </div>
+
+  
+
+  
+  </body>
+</html>
