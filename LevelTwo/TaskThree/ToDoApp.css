@@ -1,0 +1,68 @@
+body{
+    background-color: bisque;
+    display: inline-block;
+}
+h1 {
+    margin-top: 50px;
+    margin-left: 690px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 300%;
+}
+
+.newTask {
+    margin-left: 710px;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 150%;
+}
+
+.inputTask {
+    margin-left: 600px;
+    width: 300px;
+    height: 25px;
+    border-radius: 7px;
+}
+
+.addTaskBut {
+    width: 100px;
+    height: 25px;
+    border-radius: 7px;
+}
+
+.pendingTasksheading {
+    font-family:'Merriweather Sans', sans-serif;
+    font-size: 150%;
+    margin-top: 5px;
+    
+}
+
+.completedTasksheading {
+    font-family:'Merriweather Sans', sans-serif;
+    font-size: 150%;
+    margin-top: 15px;
+}
+
+.completeButton {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin-left: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.deleteButton {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin-left: 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+#pendingTasks li {
+  margin-bottom: 10px; 
+}
